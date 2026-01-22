@@ -1,0 +1,32 @@
+cat > .npmignore << 'EOF'
+src/
+tsconfig.json
+*.log
+.DS_Store
+.env
+coverage/
+*.tgz
+.git
+.gitignore
+node_modules/
+TESTING.md
+QUICK-TEST.md
+COMPARISON.md
+PACKAGE-SUMMARY.md
+TEST-COVERAGE.md
+USAGE-FLOWS.md
+.github/
+
+# Include these in npm package:
+!dist/
+!apps/
+!test-scenarios/
+!README.md
+!LICENSE
+!package.json
+!scripts/
+EOF
+
+git add .npmignore
+git commit -m "Add .npmignore for npm publishing"
+git push
